@@ -1,8 +1,0 @@
-{
-  "name": "dators-snake",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "test": "node --test src/gameLogic.test.mjs"
-  }
-}
