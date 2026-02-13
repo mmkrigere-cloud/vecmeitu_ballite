@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vecmeitu ballīte</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hud">
+        <div>
+          <h1>vecmeitu ballīte</h1>
+          <p class="tagline">Iceland night route</p>
+        </div>
+        <div class="score">Punkti: <span id="score">0</span></div>
+      </header>
+
+      <section class="board-wrap">
+        <div id="board" class="board" role="grid" aria-label="Vecmeitu ballite game board"></div>
+      </section>
+
+      <section class="actions">
+        <button id="restart" type="button">Restart</button>
+        <button id="pause" type="button">Pause</button>
+        <p id="status" class="status" aria-live="polite">
+          Use arrow keys or WASD to guide the brides.
+        </p>
+      </section>
+
+      <section class="controls" aria-label="Touch controls">
+        <button class="ctrl" data-dir="up" type="button">Up</button>
+        <div class="control-row">
+          <button class="ctrl" data-dir="left" type="button">Left</button>
+          <button class="ctrl" data-dir="down" type="button">Down</button>
+          <button class="ctrl" data-dir="right" type="button">Right</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./src/gameLogic.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
